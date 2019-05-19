@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>List</title>
+  </head>
+  <body>
+    <div class="header-div"></div>
+    <h1>いらっしゃいませ！</h1>
+
+    <section class="form-section">
+      <!-- Form -->
+      <!-- <form action="#" class="form" method="POST"> -->
+      <form class="form" id="form">
+        <!-- Item Input -->
+        <div class="form-input" id="form-item">
+          <label for="item"></label>
+          <input
+            type="text"
+            id="item"
+            name="item"
+            placeholder="Add something..."
+            autofocus
+          />
+        </div>
+
+        <!-- Quantity Input -->
+        <div class="form-input" id="form-quantity">
+          <label for="quantity"></label>
+          <input type="text" id="quantity" placeholder="Qty..." />
+        </div>
+
+        <!-- Type Input -->
+        <div id="type-wrapper">
+          <button type="button" class="type-button" id="produce">
+            Produce
+          </button>
+          <button type="button" class="type-button" id="meat">Meat</button>
+          <button type="button" class="type-button" id="dairy">
+            Dairy
+          </button>
+          <button type="button" class="type-button" id="dry">
+            Dry Goods
+          </button>
+          <button type="button" class="type-button" id="freezer">
+            Freezer
+          </button>
+          <button type="button" class="type-button" id="other">
+            Other
+          </button>
+        </div>
+
+        <div class="button-wrapper">
+          <!-- Add button -->
+          <div class="form-button">
+            <button type="button" id="add">Add</button>
+          </div>
+
+          <!-- Undo button -->
+          <div class="form-button">
+            <button type="button" id="undo">Undo</button>
+          </div>
+
+          <!-- Mail button -->
+          <div class="form-button">
+            <button type="button" id="email">Email</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- List Results -->
+    <div class="results-header-div"></div>
+    <h2>いただきます！</h2>
+
+    <section class="list-section">
+      <div id="results-wrapper">
+        <div class="result-div">
+          <h3>Produce</h3>
+          <ul class="result-list" id="produce-result"></ul>
+        </div>
+
+        <div class="result-div">
+          <h3>Meat</h3>
+          <ul class="result-list" id="meat-result"></ul>
+        </div>
+
+        <div class="result-div">
+          <h3>Dairy</h3>
+          <ul class="result-list" id="dairy-result"></ul>
+        </div>
+
+        <div class="result-div">
+          <h3>Dry Goods</h3>
+          <ul class="result-list" id="dry-result"></ul>
+        </div>
+
+        <div class="result-div">
+          <h3>Freezer</h3>
+          <ul class="result-list" id="freezer-result"></ul>
+        </div>
+
+        <div class="result-div">
+          <h3>Other</h3>
+          <ul class="result-list" id="other-result"></ul>
+        </div>
+
+        <!-- <ul id="results-list"></ul> -->
+      </div>
+    </section>
+  </body>
+</html>

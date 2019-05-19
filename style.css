@@ -1,0 +1,115 @@
+/** Main Styling */
+
+:root {
+  --main-color: rgba(64, 193, 169, 0.8);
+  --second-color: rgba(250, 59, 59, 0.8);
+  --produce: rgba(175, 245, 105, 0.8);
+  --meat: rgba(255, 121, 121, 0.8);
+  --dairy: rgba(137, 233, 255, 0.8);
+  --dry: rgba(230, 187, 93, 0.8);
+  --freezer: rgba(130, 140, 255, 0.8);
+  --other: rgba(213, 213, 213, 0.8);
+  --box-left: -5px 7px 10px -6px;
+  --box-right: 5px 7px 10px -6px;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
+.header-div {
+  background: #333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 65px;
+  width: 100%;
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  /* color: var(--main-color); */
+  margin: 1rem 0 1rem 0;
+}
+
+.results-header-div {
+  background: #333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 87%;
+  height: 70px;
+  width: 100%;
+  z-index: -1;
+}
+
+h2 {
+  margin-top: 1.7rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  /* color: var(--second-color); */
+}
+
+/** Text Input Styling */
+
+.form-input input {
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin-top: 0.5rem;
+  width: 90%;
+  font-size: 2rem;
+}
+
+/** Type Styling */
+
+#type-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.type-button {
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
+  border: 1px solid black;
+  background: #fff;
+  border-radius: 7px;
+}
+
+/** Add & Undo Buttons */
+
+.form-button button {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5rem auto;
+  padding: 0.2rem 7.1rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  width: 100%;
+}
+
+#add {
+  background-color: var(--main-color);
+}
+
+#undo {
+  background-color: var(--second-color);
+}
+
+/** Results Styling */
+
+.result-div {
+  /* border: 1px solid red; */
+  width: 180px;
+  display: inline-block;
+}
