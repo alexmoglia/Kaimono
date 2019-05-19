@@ -51,6 +51,7 @@ h2 {
   background: #333;
   color: #fff;
   padding: 1.2rem 0;
+  display: block;
   /* color: var(--second-color); */
 }
 
