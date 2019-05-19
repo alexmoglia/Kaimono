@@ -26,22 +26,11 @@ section {
 }
 
 .header-div {
-  background: #333;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 65px;
-  width: 100%;
-  z-index: -1;
+  display: none;
 }
 
 h1 {
-  text-align: center;
-  font-size: 2rem;
-  color: #fff;
-  /* color: var(--main-color); */
-  margin: 1rem 0 1rem 0;
+  display: none;
 }
 
 h2 {
@@ -60,7 +49,7 @@ h2 {
 .form-input input {
   padding: 0.5rem 0 0.5rem 1rem;
   margin-top: 0.5rem;
-  width: 90%;
+  width: 95%;
   font-size: 2rem;
 }
 
@@ -107,4 +96,53 @@ h2 {
   /* border: 1px solid red; */
   width: 180px;
   display: inline-block;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.3rem;
+}
+
+/*! Media Queries  */
+
+@media (min-width: 700px) {
+  section {
+    max-width: 800px;
+  }
+
+  .header-div {
+    display: block;
+    background: #333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 65px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    /* color: var(--main-color); */
+    margin: 1rem 0 2rem 0;
+  }
+
+  form {
+    padding: 1rem;
+    border: 1px solid black;
+    /* border-radius: 25px; */
+    background: rgb(208, 208, 208);
+    box-shadow: 0px 0px 20px -5px;
+  }
+
+  .form-input input {
+    width: 97%;
+  }
 }
