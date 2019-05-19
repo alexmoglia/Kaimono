@@ -10,8 +10,8 @@ function init() {
   const undo = document.querySelector("#undo");
   undo.addEventListener("click", undoResults);
 
-  const email = document.querySelector("#email");
-  email.addEventListener("click", emailResults);
+  // const email = document.querySelector("#email");
+  // email.addEventListener("click", emailResults);
 
   const form = document.querySelector("form");
   form.addEventListener("keyup", event =>
@@ -73,8 +73,8 @@ function undoResults() {
   section.removeChild(li);
 }
 
-function emailResults() {
-  // emailValue = prompt("Enter your email address:");
-  // console.log(emailValue);
-  window.open("mailto:test@example.com");
-}
+// function emailResults() {
+// emailValue = prompt("Enter your email address:");
+// console.log(emailValue);
+//   window.open("mailto:test@example.com");
+// }
