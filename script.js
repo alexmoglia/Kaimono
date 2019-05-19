@@ -74,7 +74,7 @@ function undoResults() {
 }
 
 function emailResults() {
-  emailValue = prompt("Enter your email address:");
+  // emailValue = prompt("Enter your email address:");
   // console.log(emailValue);
-  window.open("mailto:" + emailValue);
+  window.open("mailto:test@example.com");
 }
