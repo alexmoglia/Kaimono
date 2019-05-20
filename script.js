@@ -37,13 +37,13 @@ function processTypeClick(target) {
   }
 }
 
-let counter = "0";
+let resultSections = [];
+
 function updateResults() {
   itemValue = document.querySelector("#item").value;
-  if (itemValue !== "") {
-    // assemble Section identifier for pushing result
-    section = document.querySelector("#" + typeValue + "-result");
+  section = document.querySelector("#" + typeValue + "-result");
 
+  if (itemValue !== "") {
     // check if Quantity info provided, update itemValue if so
     quantityValue = document.querySelector("#quantity").value;
     if (quantityValue) {
@@ -54,7 +54,7 @@ function updateResults() {
     li = document.createElement("li");
     node = document.createTextNode(itemValue);
     li.appendChild(node);
-    section.appendChild(li);
+    document.querySelector("#" + typeValue + "-result").appendChild(li);
 
     // reset the form
     resetForm();
@@ -72,9 +72,3 @@ function resetForm() {
 function undoResults() {
   section.removeChild(li);
 }
-
-// function emailResults() {
-// emailValue = prompt("Enter your email address:");
-// console.log(emailValue);
-//   window.open("mailto:test@example.com");
-// }
